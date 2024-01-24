@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Super Bowl Trivia Quiz</title>
+  <style>
+    /*Internal styles for buttons*/
+    button {
+        border-radius: 8px;
+        margin: 5px;
+        padding: 10px;
+        cursor: pointer;
+    }
+</style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div id="start-screen">
+      <h1>Super Bowl Trivia Quiz</h1>
+      <button id="start-btn">Play Ball</button>
+    </div>
+
+    <div id="quiz-screen" style="display: none;">
+      <h2 id="question">Question goes here</h2>
+      <div id="options" class="options" style="display: none;"></div>
+      <textarea id="code-input" class="code-input" style="display: none;"></textarea>
+      <p id="timer">Time: <span id="time">60</span> seconds</p>
+      <button id="submit-btn" style="display: none;">Submit Answer</button>
+    </div>
+
+    <div id="feedback"></div>
+   
+    <div id="end-screen" style="display: none;">
+      <h2>Game Over!</h2>
+      <p>Your score: <span id="final-score"></span></p>
+      <label for="initials">Enter Initials:</label>
+      <input type="text" id="initials" maxlength="3">
+      <button id="save-btn">Save Score</button>
+    </div>
+
+  </div>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>

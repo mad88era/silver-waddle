@@ -1,0 +1,51 @@
+/*sets the background for the entire page to black*/
+body {
+    background: teal;
+  }
+    /*styling for the main container, adding a goldenrod colore and a box shadow of black*/
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: darkorange;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      font-size: 18px;
+    }
+  
+    .img-lombardi {
+      margin-left: 890px;
+      justify-content: center;
+    } 
+    /*Styles the button and text areas with a background color of black and the lettering to goldenrod*/
+    button, textarea {
+      font-style:normal;
+      font-size: 25px;
+      padding: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+      background: white;
+      color: teal;
+    }
+    /*Addtional styling for the button to make the buttons with dounded coners*/
+    button {
+      border-radius: 8px;
+      margin: 5px;
+      padding: 10px; 
+      cursor: pointer;
+    } 
+    button:hover {
+        background: teal;
+        color: white;
+
+    }
+  /*Sets the containers for the options and code imput making them display as flex containers with a column directions*/
+    #options, #code-input {
+      display: flex;
+      flex-direction: column;
+    }
+  /*Adds specific styling buttons inside the options container, including a margin-bottom for spacing*/
+    #options button {
+      margin-bottom: 5px;
+    }
+  
